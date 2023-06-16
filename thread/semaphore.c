@@ -25,10 +25,8 @@ void write_to_file( int n)
 			ok = 1;
 		}
 		pthread_mutex_unlock(&lock_valid_file);
-		// ghi vao file neu ok o tren 
 		if( ok == 1)
 		{
-			
 			char nameFile[30];
 			sprintf(nameFile ,"fsemaphore%d.txt" , i);
 			FILE *fp  = fopen(nameFile , "a+");
